@@ -1,0 +1,84 @@
+body {
+    background-color: #ffd2fc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #d79c9c;
+    width: 50rem;
+    margin: 10rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    box-shadow: darkgrey 2px 2px 5px;
+}
+
+label {
+    margin-bottom: 1rem;
+    display: block;
+}
+
+input {
+    height: 2rem;
+    width: 70%;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border-color: transparent;
+    background-color: #fff4f4;
+    box-shadow: rgb(155, 79, 79) -2px 4px 4px;
+    transition: width .4s ease-in, 
+    border-radius .4s ease-in,
+    box-shadow .2s ease-in;
+    color: rgb(155, 79, 79);
+}
+
+input:focus-visible {
+    outline-style: none;
+    width: 88%;
+    border-radius: 20px;
+    box-shadow: rgb(155, 79, 79) -4px 8px 4px;
+    color: rgb(54, 54, 54);
+}
+
+input:hover {
+    box-shadow: rgb(155, 79, 79) -4px 8px 4px;
+}
+
+button {
+    font-size: inherit;
+    font-family: inherit;
+    width: fit-content;
+    padding: .2rem 2rem;
+    margin-top: 1rem;
+    align-self: flex-end;
+    border-radius: 8px;
+    border: transparent;
+    box-shadow: black 1px 1px 2px;
+    background-color: rgb(155, 79, 79);
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(139, 73, 73);
+}
+
+input.warning {
+    background-color: #da4444;
+    color: white;
+}
+
+#remaining-chars.warning {
+    color: white;
+}
+
+input.error {
+    background-color: #8f0606;
+}
+
+#remaining-chars.error {
+    color: #8f0606;
+}
